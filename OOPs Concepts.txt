@@ -1,0 +1,22 @@
+OOPs Concepts
+
+POP -> Procedure Oriented Programming
+Static Programming
+
+OOPs -> Object Oriented Programming
+Real World Concepts Acquire using this model
+
+1. Inheritance - Heridity
+2. Polymorphism
+3. Data Abstraction
+4. Encapsulation
+
+What is Object??
+-> Any real world Entity is an object
+table, chair, headphones, wire, anything in this world that exist is an object.
+
+What is Class?
+-> A class is a collection of objects (similar).
+
+
+You have to write the names of 50 objects and 50 classes.

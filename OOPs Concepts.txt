@@ -20,3 +20,25 @@ What is Class?
 
 
 You have to write the names of 50 objects and 50 classes.
+
+How to create a class and objects
+
+syntax of class: 
+
+class class_name{
+    //class body
+};
+
+syntax of object:
+
+class_name obj_name;
+
+Concept of Access Modifiers:
+
+A access modifier is a way to restrict the access of a class or a variable.
+
+3 types of access modifiers:
+
+1. Public - Accessible from anywhere
+2. Private - Accessible only within the class
+3. Protected - Accessible within the class and its derived classes

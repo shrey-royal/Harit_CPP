@@ -24,35 +24,59 @@ int main(){
 
 */
 
-// class A{
-//     private:
-//         int a;
+#include<iostream>
+using namespace std;
 
-//     public:
-//         void set_a(int x){
-//             a = x;
-//         }
+class B;    //forward declaration
 
-//     friend void min(A,B);
-// };
+class A{
+    private:
+        int a;
 
-// class B{
-//     private:
-//         int b;
+    public:
+        void set_a(int x){
+            a = x;
+        }
 
-//     public:
-//         void set_b(int x){
-//             b = x;
-//         }
+    friend void min(A,B);
+};
 
-//     friend void min(A,B);
-// };
+class B{
+    private:
+        int b;
 
-// void min(A a, B y){
-//     if(a.a < y.b){
-//         cout << "a is smaller" << endl;
-//     }
-//     else{
-//         cout << "b is smaller" << endl;
-//     }
-// }
+    public:
+        void set_b(int x){
+            b = x;
+        }
+
+    friend void min(A,B);
+};
+
+void min(A a,B b){
+    if(a.a < b.b){
+        cout << "a is smaller than b" << endl;
+    }
+    else{
+        cout << "b is smaller than a" << endl;
+    }
+}
+
+int main()
+{
+    A a;
+    B b;
+    int x, y;
+    cout << "enter 1st number: ";
+    cin >> x;
+    cout << "enter 2nd number: ";
+    cin >> y;
+
+    a.set_a(x);
+    b.set_b(y);
+
+    min(a,b);
+
+    return 0;
+}
+

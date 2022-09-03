@@ -1,0 +1,24 @@
+What is Polymorphism in cpp?
+-> It is a concept of having many forms. means we can use the same function name for different purposes.
+-> Polymorphism - divide into two words Poly and Morphism.
+                                        many     forms
+-> Polymorphism is a concept of having many forms.
+-> To perform one task we can use many different ways.
+
+Polymorphism have two types:
+1. Compile time Polymorphism
+2. Run time Polymorphism
+
+1. Compile time Polymorphism:
+-> Compile time polymorphism is also known as static polymorphism.
+-> In this type of polymorphism, function overloading and operator overloading are used.
+
+2. Run time Polymorphism:
+-> Run time polymorphism is also known as dynamic polymorphism.
+-> In this type of polymorphism, function overriding is used.
+
+
+Polymorphism: 
+-> overloading
+-> overriding
+-> virtual function

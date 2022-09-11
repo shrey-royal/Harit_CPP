@@ -8,8 +8,6 @@ Exception Handling in cpp is a mechanism to handle the run time errors.
 > try block is used to check the exception.
 > catch block is used to handle the exception.
 > throw block is used to throw the exception.
-> finally block is used to execute the code after try and catch block.
-
 
 */
 
@@ -20,21 +18,22 @@ using namespace std;
 int main() {
     int a, b;
 
-    cout << "Enter a: ";
-    cin >> a;
-    cout << "Enter b: ";
-    cin >> b;
+        cout << "Enter a: ";
+        cin >> a;
+        cout << "Enter b: ";
+        cin >> b;
 
-    try{
-        if(b == 0){
+
+
+    try{ 
+        if(b == 0) {
             throw "Division by zero is not possible";
         }
-        cout << "a/b = " << a/b << endl;
-    } catch(const char* msg) {
-        cerr << msg << endl;
-    }
 
-    cout << "End of program" << endl;
+        cout << "a/b = " << a/b << endl;    //exception may occur here
+    }catch(const char* msg){
+        cout << msg << endl;
+    }
 
     return 0;    
 }
